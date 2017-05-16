@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIDynamics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="floresta.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cIe-TQ-WFN">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10910374" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Pa-ck-RYE">
+                                <rect key="frame" x="45" y="295" width="285" height="78"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FWP-aX-Em3">
+                                <rect key="frame" x="137" y="283" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.025665736540000001" green="0.53301586320000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zso-IX-0bt">
+                                <rect key="frame" x="-0.5" y="20" width="375" height="20"/>
+                                <color key="backgroundColor" red="0.025665736540000001" green="0.53301586320000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Ym1-rs-Se0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zso-IX-0bt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AaJ-EI-ywy"/>
+                            <constraint firstItem="cIe-TQ-WFN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KkP-mY-6Zu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cIe-TQ-WFN" secondAttribute="bottom" id="PqH-7Z-YG3"/>
+                            <constraint firstAttribute="trailing" secondItem="cIe-TQ-WFN" secondAttribute="trailing" id="TF7-Dt-MIv"/>
+                            <constraint firstItem="cIe-TQ-WFN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="Vmd-3e-bUo"/>
+                            <constraint firstItem="6Pa-ck-RYE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WN9-3h-vh3"/>
+                            <constraint firstItem="Zso-IX-0bt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="iFG-Km-4s8"/>
+                            <constraint firstItem="6Pa-ck-RYE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kCv-97-0CJ"/>
+                            <constraint firstItem="Zso-IX-0bt" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="lZZ-fX-Mja"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundimage" destination="cIe-TQ-WFN" id="VEb-1c-59i"/>
+                        <outlet property="barrier" destination="Zso-IX-0bt" id="gPR-A2-suN"/>
+                        <outlet property="cube" destination="FWP-aX-Em3" id="toH-Sn-w5K"/>
+                        <outlet property="score" destination="6Pa-ck-RYE" id="S1I-4U-8sU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="floresta.jpg" width="1280" height="853"/>
+    </resources>
+</document>
